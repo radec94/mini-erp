@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="proveidors" type="tipusProveidors"/>
+
+  <xs:complexType name="tipusProveidors">
+    <xs:sequence>
+      <xs:element name="proveidor" type="tipusProveidor" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="tipusProveidor">
+    <xs:sequence>
+      <xs:element name="codi" type="xs:string"/>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="adreca" type="xs:string"/>
+      <xs:element name="poblacio" type="xs:string"/>
+      <xs:element name="cp" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

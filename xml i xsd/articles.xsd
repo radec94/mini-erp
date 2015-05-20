@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="articles" type="tipusArticles"/>
+  <xs:complexType name="tipusArticles">
+    <xs:sequence>
+      <xs:element name="article" type="tipusArticle" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+    <xs:complexType name="tipusArticle">
+    <xs:sequence>
+      <xs:element name="codi" type="xs:int"/>
+	  <xs:element name="nom" type="xs:string"/>
+	  <xs:element name="descripcio" type="xs:string"/>
+	  <xs:element name="preu" type="xs:int"/>
+	  <xs:element name="estoc" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+</xs:schema>
