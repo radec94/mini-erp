@@ -84,56 +84,56 @@
         <estoc>155</estoc>
 	</article>
 	<article>
-		<codi>0012</codi>
+		<codi>0013</codi>
         <nom>Camiseta</nom>
         <descripcio>Camiseta groga</descripcio>
 		<preu>12</preu>
         <estoc>179</estoc>
 	</article>
 	<article>
-		<codi>0013</codi>
+		<codi>0014</codi>
         <nom>Suadera</nom>
         <descripcio>Suadera blanca</descripcio>
 		<preu>37</preu>
         <estoc>264</estoc>
 	</article>
 	<article>
-		<codi>0014</codi>
+		<codi>0015</codi>
         <nom>Paravent</nom>
         <descripcio>Paravent vermell</descripcio>
 		<preu>32</preu>
         <estoc>375</estoc>
 	</article>
 	<article>
-		<codi>0015</codi>
+		<codi>0016</codi>
         <nom>Xubasquero</nom>
         <descripcio>Xubasquero blau</descripcio>
 		<preu>28</preu>
         <estoc>225</estoc>
 	</article>
 	<article>
-		<codi>0016</codi>
+		<codi>0017</codi>
         <nom>Camisa</nom>
         <descripcio>Camisa llisa blau fosc</descripcio>
 		<preu>21</preu>
         <estoc>312</estoc>
 	</article>
 	<article>
-		<codi>0017</codi>
+		<codi>0018</codi>
         <nom>Malles</nom>
         <descripcio>Malles negres</descripcio>
 		<preu>11</preu>
         <estoc>231</estoc>
 	</article>
 	<article>
-		<codi>0018</codi>
+		<codi>0019</codi>
         <nom>Chaleco</nom>
         <descripcio>Chaleco marro</descripcio>
 		<preu>34</preu>
         <estoc>395</estoc>
 	</article>
 	<article>
-		<codi>0019</codi>
+		<codi>0020</codi>
         <nom>Forro Polar</nom>
         <descripcio>Forro polar negre</descripcio>
 		<preu>42</preu>
