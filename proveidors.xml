@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proveidors>
+	<proveidor>
+		<nom>Gemma Male</nom>
+		<telefon>972856745</telefon>
+		<situacio>Girona</situacio>
+	</proveidor>
+	<proveidor>
+		<nom>Mariel</nom>
+		<telefon>972856745</telefon>
+		<situacio>Girona</situacio>
+	</proveidor>
+	<proveidor>
+		<nom>Harlequin</nom>
+		<telefon>972856745</telefon>
+		<situacio>Girona</situacio>
+	</proveidor>
+	<proveidor>
+		<nom>Peroni</nom>
+		<telefon>972856745</telefon>
+		<situacio>Girona</situacio>
+	</proveidor>
+	<proveidor>
+		<nom>Mimic Art</nom>
+		<telefon>972856745</telefon>
+		<situacio>Girona</situacio>
+	</proveidor>
+</proveidors>
