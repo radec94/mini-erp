@@ -1,4 +1,5 @@
-<comanda>
+<?xml version="1.0" encoding="utf-8"?>
+<comanda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="comandes.xsd">
     <codiProveidor>P03</codiProveidor>
     <data>20/05/2015</data>
     <articles>
