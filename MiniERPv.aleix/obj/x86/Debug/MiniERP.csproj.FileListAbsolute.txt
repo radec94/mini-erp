@@ -1,0 +1,32 @@
+G:\c1213\M04\uf3\plantilla\MiniERP\bin\Debug\MiniERP.exe
+G:\c1213\M04\uf3\plantilla\MiniERP\bin\Debug\MiniERP.pdb
+G:\c1213\M04\uf3\plantilla\MiniERP\obj\x86\Debug\MiniERP.csprojResolveAssemblyReference.cache
+G:\c1213\M04\uf3\plantilla\MiniERP\obj\x86\Debug\MiniERP.frmERP.resources
+G:\c1213\M04\uf3\plantilla\MiniERP\obj\x86\Debug\MiniERP.Properties.Resources.resources
+G:\c1213\M04\uf3\plantilla\MiniERP\obj\x86\Debug\MiniERP.csproj.GenerateResource.Cache
+G:\c1213\M04\uf3\plantilla\MiniERP\obj\x86\Debug\MiniERP.exe
+G:\c1213\M04\uf3\plantilla\MiniERP\obj\x86\Debug\MiniERP.pdb
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.exe
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.pdb
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\bin\Debug\MiniERP.exe
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\bin\Debug\MiniERP.pdb
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.csprojResolveAssemblyReference.cache
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.frmERP.resources
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.Properties.Resources.resources
+C:\Users\professor\Desktop\minierp\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.csproj.GenerateResource.Cache
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.exe
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.pdb
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\bin\Debug\MiniERP.exe
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\bin\Debug\MiniERP.pdb
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.csprojResolveAssemblyReference.cache
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.frmERP.resources
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.Properties.Resources.resources
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilla\plantilla\MiniERP\obj\x86\Debug\MiniERP.csproj.GenerateResource.Cache
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\obj\x86\Debug\MiniERP.exe
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\obj\x86\Debug\MiniERP.pdb
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\bin\Debug\MiniERP.exe
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\bin\Debug\MiniERP.pdb
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\obj\x86\Debug\MiniERP.csprojResolveAssemblyReference.cache
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\obj\x86\Debug\MiniERP.frmERP.resources
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\obj\x86\Debug\MiniERP.Properties.Resources.resources
+D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERP\obj\x86\Debug\MiniERP.csproj.GenerateResource.Cache
