@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <comanda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="comandes.xsd">
     <codiProveidor>P03</codiProveidor>
-    <data>20/05/2015</data>
+    <data>2015-09-24</data><!--Ha de estar amb aquest format: 2002-09-24 -->
     <articles>
         <article>
             <codiArticle>0001</codiArticle>

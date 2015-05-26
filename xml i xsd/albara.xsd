@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:element name="comanda" type="tipusComanda"/>
-
-  <xs:complexType name="tipusComanda">
+  <xs:element name="albara" type="tipusAlbara"/>
+  
+  <xs:complexType name="tipusAlbara">
     <xs:sequence>
-      <xs:element name="codiProveidor" type="tipusCodiProveidor"/>
-      <xs:element name="data" type="xs:date"/><!--Ficar tipus date-->
+      <xs:element name="codiComanda" type="tipusCodi"/>
+      <xs:element name="data" type="xs:date"/>
       <xs:element name="articles" type="tipusArticles"/>
     </xs:sequence>
   </xs:complexType>
   
-  <xs:simpleType name="tipusCodiProveidor">
+  <xs:simpleType name="tipusCodi">
     <xs:restriction base="xs:string">
-      <xs:length value="3"/>
+      <xs:length value="4"/>
     </xs:restriction>
   </xs:simpleType>
   

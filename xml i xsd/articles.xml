@@ -2,140 +2,120 @@
 <articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="articles.xsd">
 	<article>
         <codi>0001</codi>
-		    <nom>Motxilla</nom>
         <descripcio>Motxilla blava esportiva</descripcio>
 		    <preu>20</preu>
         <estoc>245</estoc>
 	</article>
 	<article>
 		    <codi>0002</codi>
-        <nom>Samarreta</nom>
         <descripcio>Samarreta de quadres vermell i blanc</descripcio>
 		    <preu>19</preu>
         <estoc>124</estoc>
 	</article>
 	<article>
 		    <codi>0003</codi>
-        <nom>Pantalons</nom>
         <descripcio>Pantalons negres cagats</descripcio>
 		    <preu>25</preu>
         <estoc>432</estoc>
 	</article>
 	<article>
 		    <codi>0004</codi>
-        <nom>Chandall</nom>
         <descripcio>Chandall esportiu blau i blanc</descripcio>
 		    <preu>15</preu>
         <estoc>214</estoc>
 	</article>
 	<article>
 		    <codi>0005</codi>
-        <nom>Mitjons</nom>
         <descripcio>Mitjons curts negres</descripcio>
 		    <preu>7</preu>
         <estoc>227</estoc>
 	</article>
 	<article>
 		    <codi>0006</codi>
-        <nom>Texans</nom>
         <descripcio>Texans blaus curts</descripcio>
 	    	<preu>24</preu>
         <estoc>373</estoc>
 	</article>
 	<article>
 	    	<codi>0007</codi>
-        <nom>Jaqueta</nom>
         <descripcio>Jaqueta negra</descripcio>
 	    	<preu>40</preu>
         <estoc>174</estoc>
 	</article>
 	<article>
 	    	<codi>0008</codi>
-        <nom>Polar</nom>
         <descripcio>Polar vermell</descripcio>
 		    <preu>30</preu>
         <estoc>319</estoc>
 	</article>
 	<article>
 	    	<codi>0009</codi>
-        <nom>Espardenyes</nom>
         <descripcio>Espardenyes estiu marrons</descripcio>
 		    <preu>12</preu>
         <estoc>259</estoc>
 	</article>
 	<article>
 		    <codi>0010</codi>
-        <nom>Botes d' aigua</nom>
         <descripcio>Botes d'aigua blaves</descripcio>
 		    <preu>11</preu>
         <estoc>381</estoc>
 	</article>
 	<article>
 		    <codi>0011</codi>
-        <nom>Sandalies</nom>
         <descripcio>Sandalies estiu marrons</descripcio>
 	    	<preu>11</preu>
         <estoc>256</estoc>
 	</article>
 	<article>
 		    <codi>0012</codi>
-        <nom>Bambes</nom>
         <descripcio>Bambes esportives negres</descripcio>
 	    	<preu>14</preu>
         <estoc>155</estoc>
 	</article>
 	<article>
 	    	<codi>0012</codi>
-        <nom>Camiseta</nom>
         <descripcio>Camiseta groga</descripcio>
 		    <preu>12</preu>
         <estoc>179</estoc>
 	</article>
 	<article>
 	    	<codi>0013</codi>
-        <nom>Suadera</nom>
         <descripcio>Suadera blanca</descripcio>
 	    	<preu>37</preu>
         <estoc>264</estoc>
 	</article>
 	<article>
 		    <codi>0014</codi>
-        <nom>Paravent</nom>
         <descripcio>Paravent vermell</descripcio>
 	    	<preu>32</preu>
         <estoc>375</estoc>
 	</article>
 	<article>
 		    <codi>0015</codi>
-        <nom>Xubasquero</nom>
         <descripcio>Xubasquero blau</descripcio>
 	    	<preu>28</preu>
         <estoc>225</estoc>
 	</article>
 	<article>
 		    <codi>0016</codi>
-        <nom>Camisa</nom>
         <descripcio>Camisa llisa blau fosc</descripcio>
 		    <preu>21</preu>
         <estoc>312</estoc>
 	</article>
 	<article>
 	    	<codi>0017</codi>
-        <nom>Malles</nom>
         <descripcio>Malles negres</descripcio>
 		    <preu>11</preu>
         <estoc>231</estoc>
 	</article>
 	<article>
 		    <codi>0018</codi>
-        <nom>Chaleco</nom>
         <descripcio>Chaleco marro</descripcio>
 	    	<preu>34</preu>
         <estoc>395</estoc>
 	</article>
 	<article>
 		    <codi>0019</codi>
-        <nom>Forro Polar</nom>
         <descripcio>Forro polar negre</descripcio>
 		    <preu>42</preu>
         <estoc>278</estoc>

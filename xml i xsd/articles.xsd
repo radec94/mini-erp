@@ -10,12 +10,16 @@
 
     <xs:complexType name="tipusArticle">
     <xs:sequence>
-      <xs:element name="codi" type="xs:int"/>
-	  <xs:element name="nom" type="xs:string"/>
-	  <xs:element name="descripcio" type="xs:string"/>
-	  <xs:element name="preu" type="xs:int"/>
-	  <xs:element name="estoc" type="xs:int"/>
+      <xs:element name="codi" type="tipusCodi"/>
+	    <xs:element name="descripcio" type="xs:string"/>
+	    <xs:element name="preu" type="xs:int"/>
+	    <xs:element name="estoc" type="xs:int"/>
     </xs:sequence>
   </xs:complexType>
-  
+
+  <xs:simpleType name="tipusCodi">
+      <xs:restriction base="xs:string">
+        <xs:length value="4"/>
+      </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

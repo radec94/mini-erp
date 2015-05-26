@@ -11,11 +11,23 @@
   
   <xs:complexType name="tipusProveidor">
     <xs:sequence>
-      <xs:element name="codi" type="xs:string"/>
+      <xs:element name="codi" type="tipusCodi"/>
       <xs:element name="nom" type="xs:string"/>
       <xs:element name="adreca" type="xs:string"/>
       <xs:element name="poblacio" type="xs:string"/>
-      <xs:element name="cp" type="xs:int"/>
+      <xs:element name="cp" type="tipusCP"/>
     </xs:sequence>
   </xs:complexType>
+
+  <xs:simpleType name="tipusCodi">
+      <xs:restriction base="xs:string">
+        <xs:length value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+
+  <xs:simpleType name="tipusCP">
+    <xs:restriction base="xs:string">
+      <xs:length value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
