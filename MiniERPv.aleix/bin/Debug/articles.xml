@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="articles.xsd">
-	<article>
+	<aarticle>
         <codi>0001</codi>
 		    <nom>Motxilla</nom>
         <descripcio>Motxilla blava esportiva</descripcio>

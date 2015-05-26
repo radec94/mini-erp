@@ -91,12 +91,14 @@
             this.proveïdorsToolStripMenuItem1.Name = "proveïdorsToolStripMenuItem1";
             this.proveïdorsToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
             this.proveïdorsToolStripMenuItem1.Text = "Proveïdors";
+            this.proveïdorsToolStripMenuItem1.Click += new System.EventHandler(this.proveïdorsToolStripMenuItem1_Click);
             // 
             // incorporarComandaToolStripMenuItem
             // 
             this.incorporarComandaToolStripMenuItem.Name = "incorporarComandaToolStripMenuItem";
             this.incorporarComandaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.incorporarComandaToolStripMenuItem.Text = "Incorporar Comanda";
+            this.incorporarComandaToolStripMenuItem.Click += new System.EventHandler(this.incorporarComandaToolStripMenuItem_Click);
             // 
             // recepcionarAlbaràToolStripMenuItem
             // 

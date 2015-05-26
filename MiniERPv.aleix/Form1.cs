@@ -13,6 +13,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Collections;
+using Microsoft.VisualBasic;
 
 namespace MiniERP
 {
@@ -50,7 +51,16 @@ namespace MiniERP
         
 
         private void articlesToolStripMenuItem1_Click(object sender, EventArgs e)
-        {        
+        {
+            //Validem XML
+            ValidarXML("articles", "articles");
+            //Importem articles
+            ImportarArticles();
+
+        } //ImportarArticles
+
+        private void ImportarArticles()
+        {
             string connectionString;
 
             //Extreiem del XML:
@@ -58,9 +68,6 @@ namespace MiniERP
             string descripcio = "";
             int preu = 0;
             int estoc = 0;
-
-            //Validem XML
-            ValidarXML("articles", "articles");
 
             //connectem amn la base de dades
             connectionString = "Driver={Microsoft Access Driver (*.mdb)};DBQ=minierp.mdb";
@@ -78,31 +85,30 @@ namespace MiniERP
             XmlNodeList xnList = xml.SelectNodes("/articles/article");
 
             foreach (XmlNode xn in xnList)
-
             {
                 try
                 {
-                codi = xn["codi"].InnerText;
+                    codi = xn["codi"].InnerText;
 
-                descripcio = xn["descripcio"].InnerText;
+                    descripcio = xn["descripcio"].InnerText;
 
-                estoc = Convert.ToInt32(xn["estoc"].InnerText);
+                    estoc = Convert.ToInt32(xn["estoc"].InnerText);
 
-                preu = Convert.ToInt32(xn["preu"].InnerText);
+                    preu = Convert.ToInt32(xn["preu"].InnerText);
 
-                // PER FER UN INSERT O UPDATE
-                
-                OdbcCommand cmd = new OdbcCommand();
+                    // PER FER UN INSERT O UPDATE
 
-                cmd.Connection = ConnexioMySQL;
+                    OdbcCommand cmd = new OdbcCommand();
 
-                cmd.CommandText = "INSERT INTO article VALUES ('" + codi + "','" + descripcio + "','" + estoc + "','" + preu + "');";
+                    cmd.Connection = ConnexioMySQL;
 
-                cmd.ExecuteNonQuery();
+                    cmd.CommandText = "INSERT INTO article VALUES ('" + codi + "','" + descripcio + "','" + estoc + "','" + preu + "');";
+
+                    cmd.ExecuteNonQuery();
                 }
                 catch (Exception g)
                 {
-                    AfegirError("L'ARTICLE AMB CODI: "+codi + " JA EXISTEIX A LA TAULA MESTRE D'ARTICLES", "IMPORTAR ARTICLES");
+                    AfegirError("L'ARTICLE AMB CODI: " + codi + " JA EXISTEIX A LA TAULA MESTRE D'ARTICLES", "IMPORTAR ARTICLES");
 
                 }
 
@@ -110,8 +116,212 @@ namespace MiniERP
 
             ConnexioMySQL.Close();
             
+        }
+
+        private void ImportarProveidors()
+        {
+            string connectionString;
+
+            //Extreiem del XML:
+            string codi = "";
+            string nom = "";
+            string adreca = "";
+            string poblacio = "";
+            int cp = 0;
+            //connectem amn la base de dades
+            connectionString = "Driver={Microsoft Access Driver (*.mdb)};DBQ=minierp.mdb";
+
+            OdbcConnection ConnexioMySQL = new OdbcConnection(connectionString);
+
+            ConnexioMySQL.Open();
+
+            //Seleccionem les dades
+
+            XmlDocument xml = new XmlDocument();
+
+            xml.Load("proveidors.xml");
+
+            XmlNodeList xnList = xml.SelectNodes("/proveidors/proveidor");
+
+            foreach (XmlNode xn in xnList)
+            {
+                try
+                {
+                    codi = xn["codi"].InnerText;
+
+                    nom = xn["nom"].InnerText;
+
+                    adreca = xn["adreca"].InnerText;
+
+                    poblacio = xn["poblacio"].InnerText;
+
+                    cp = Convert.ToInt32(xn["cp"].InnerText);
+
+                    // PER FER UN INSERT O UPDATE
+
+                    OdbcCommand cmd = new OdbcCommand();
+
+                    cmd.Connection = ConnexioMySQL;
+
+                    cmd.CommandText = "INSERT INTO proveidor VALUES ('" + codi + "','" + nom + "','" + adreca + "','" + poblacio + "','" + cp + "');";
+
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception )
+                {
+                    AfegirError("EL PROVEIDOR AMB CODI: " + codi + " JA EXISTEIX A LA TAULA MESTRE DE PROVEIDORS", "IMPORTAR PROVEIDOR");
+                    //nO REGISTRE EL MPRIMER CODI
+                }
+
+            }
+
+            ConnexioMySQL.Close();
 
         }
+
+        //Falta implementar lo de demanar el url del fitxer
+        private void ImportarCapçaleraComanda()
+        {
+            string connectionString;
+
+            //Extreiem del XML:
+            string codiProveidor = "";
+            string data = "";
+
+            //connectem amb la base de dades
+
+            connectionString = "Driver={Microsoft Access Driver (*.mdb)};DBQ=minierp.mdb";
+
+            OdbcConnection ConnexioMySQL = new OdbcConnection(connectionString);
+
+            ConnexioMySQL.Open();
+
+            //Seleccionem les dades
+
+            XmlDocument xml = new XmlDocument();
+
+            xml.Load("comanda1.xml");//Nom de la variable que assigna el nom de la comanda----------------------------------
+
+            XmlNodeList xnList = xml.SelectNodes("/comanda");
+
+            foreach (XmlNode xn in xnList)
+            {
+                try
+                {
+                    codiProveidor = xn["codiProveidor"].InnerText;
+
+                    data = xn["data"].InnerText;
+
+                    // PER FER UN INSERT O UPDATE
+
+                    OdbcCommand cmd = new OdbcCommand();
+
+                    cmd.Connection = ConnexioMySQL;
+
+                    cmd.CommandText = "INSERT INTO ccomanda (codiproveidor,data) VALUES ('" + codiProveidor + "','" + data + "');";
+
+                    cmd.ExecuteNonQuery();
+
+
+                }
+                catch (Exception)//Proveïdor inexistent a la taula PROVEIDOR. Genera error sobre fitxer XML
+                {
+                    AfegirError("Proveïdor inexistent a la taula PROVEIDOR "+ codiProveidor, "INCORPORAR COMANDA");
+                    //nO REGISTRE EL MPRIMER CODI
+                }
+
+            }
+
+            ConnexioMySQL.Close();
+        }
+        //Falta implementar lo de demanar el url del fitxer
+        private void ImportarDetallComanda()
+        {
+            string connectionString;
+
+            //Extreiem del XML:
+            ulong codiComanda = 0;
+            string codiArticle = "";
+            ulong quantitat = 0;
+            int preu = 0;
+            string rebuttext = "";
+            bool rebut = false;
+            int fila;
+
+            //connectem amb la base de dades
+
+            connectionString = "Driver={Microsoft Access Driver (*.mdb)};DBQ=minierp.mdb";
+
+            OdbcConnection ConnexioMySQL = new OdbcConnection(connectionString);
+
+            ConnexioMySQL.Open();
+
+            //Seleccionem les dades
+            //PER SELECCIONAR DADES
+
+            //crea el datadapter. No cal si el que volem son inserts
+
+            OdbcDataAdapter da;
+
+            da = new OdbcDataAdapter("Select codi, codiproveidor ,data  from ccomanda", ConnexioMySQL);
+
+            //omples el dataset amb les dades del da. No cal si e lque volem son inserts
+
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            //ds.Tables[0].Rows.Count número de fila
+
+            //Rows té tantes files com registres el select i tantes columnes com camps
+       
+            XmlDocument xml = new XmlDocument();
+
+            xml.Load("comanda1.xml");//Nom de la variable que assigna el nom de la comanda----------------------------------
+
+            XmlNodeList xnList = xml.SelectNodes("/comanda/articles/article");
+
+            foreach (XmlNode xn in xnList)
+            {
+                try
+                {
+                    fila = ds.Tables[0].Rows.Count-1;
+
+                    codiComanda = Convert.ToUInt64(ds.Tables[0].Rows[fila][0].ToString());
+
+                    codiArticle = xn["codiArticle"].InnerText;
+
+                    quantitat = Convert.ToUInt64(xn["quantitat"].InnerText);
+
+                    preu = Convert.ToInt32(xn["preu"].InnerText);
+
+                    rebuttext = xn["rebut"].InnerText;
+
+                    if (rebuttext[0] == 'S' || rebuttext[1] == 'i') rebut = true;
+                    else rebut = false;
+                    
+                    // PER FER UN INSERT O UPDATE
+
+                    OdbcCommand cmd = new OdbcCommand();
+
+                    cmd.Connection = ConnexioMySQL;
+                    
+                    cmd.CommandText = "INSERT INTO dcomanda VALUES (" + codiComanda + ",'" + codiArticle + "'," + quantitat + "," + preu + "," + rebut + ");";
+                    cmd.ExecuteNonQuery();
+
+
+                }
+                catch (Exception)//Proveïdor inexistent a la taula PROVEIDOR. Genera error sobre fitxer XML
+                {
+                    AfegirError("Article inexistent a la taula ARTICLES " + codiArticle, "INCORPORAR COMANDA");
+                   //nO REGISTRE EL MPRIMER CODI
+                }
+
+            }
+
+            ConnexioMySQL.Close();
+        }
+
         //FALTA TREURE ELS ERRORS DEL SISTEMA PODRIA SER UNA FUNCIO PER PARAR EL PROGRAMA SI ES TRUE;
         private void ValidarXML(string xml, string xsd)
         {
@@ -139,8 +349,6 @@ namespace MiniERP
             }
 
         }
-
-
         private void crearFitxerError()
         {
             StreamWriter arxiu = new StreamWriter("errors.xml", false);
@@ -154,8 +362,7 @@ namespace MiniERP
             arxiu.Close();
         }
 
-        //PREGUNTAR SI ES CORRECTE
-        
+        //Falta que es crei el fitxer si no existeix i si existeix fer que lompli
         private void AfegirError(string descripcio, string proces)
         {
 
@@ -212,6 +419,21 @@ namespace MiniERP
 
                 arxiu.Close();
             }
+        }
+
+        private void proveïdorsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ValidarXML("proveidors", "proveidors");
+            ImportarProveidors();
+        }
+
+        private void incorporarComandaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            ImportarCapçaleraComanda();
+
+            ImportarDetallComanda();
         }
         
    }
