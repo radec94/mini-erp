@@ -38,3 +38,5 @@ D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniER
 D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERPv.aleix\obj\x86\Debug\MiniERP.frmERP.resources
 D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERPv.aleix\obj\x86\Debug\MiniERP.Properties.Resources.resources
 D:\Estudis\LOE1\m04 llenguatge de marques\miniERP\plantilladole\plantilla\MiniERPv.aleix\obj\x86\Debug\MiniERP.csproj.GenerateResource.Cache
+C:\Users\soler1212\Documents\GitHub\mini-erp\MiniERPv.aleix\obj\x86\Debug\MiniERP.exe
+C:\Users\soler1212\Documents\GitHub\mini-erp\MiniERPv.aleix\obj\x86\Debug\MiniERP.pdb

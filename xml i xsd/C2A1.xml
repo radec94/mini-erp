@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <albara xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="albara.xsd">  
-    <codi>0001</codi>
+    <codiComanda>0001</codiComanda>
     <data>21/05/2015</data>
     <articles>
         <article>

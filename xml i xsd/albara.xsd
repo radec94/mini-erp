@@ -28,19 +28,12 @@
       <xs:element name="codiArticle" type="tipusCodiArticle"/>
       <xs:element name="quantitat" type="xs:int"/>
       <xs:element name="preu" type="xs:int"/>
-      <xs:element name="rebut" type="tipusRebut"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:simpleType name="tipusCodiArticle">
     <xs:restriction base="xs:string">
       <xs:length value="4"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="tipusRebut">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="Si|No"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
